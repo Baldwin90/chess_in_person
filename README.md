@@ -116,3 +116,6 @@ On commiting a move, if the rules justify, a player grants the opposing player t
     }
   }
 ```
+## Author
+
+Oscar Sandoval
