@@ -66,10 +66,10 @@ body{
 }
 
 .time-question-tab{
-  position: absolute;
-  top: 206px;
+  margin: auto;
+  position: relative;
+  top: -363px;
   border-radius: 10px;
-  right: 441px;
   height: 150px;
   width: 400px;
   border: 1px solid aliceblue;
@@ -123,10 +123,10 @@ body{
 }
 
 .win-message{
-  position: absolute;
-  top: 182px;
+  margin: auto;
+  position: relative;
+  top: -384px;
   border-radius: 10px;
-  right: 486px;
   height: 200px;
   width: 300px;
   border: 1px solid aliceblue;
@@ -161,9 +161,9 @@ body{
 }
 
 .pawn-conversion-tab{
-  position: absolute;
+  margin: auto;
+  position: relative;
   border-radius: 10px;
-  right: 486px;
   height: 100px;
   width: 300px;
   border: 1px solid aliceblue;
@@ -172,7 +172,7 @@ body{
   color: #FFF;
   box-sizing: border-box;
   display: none;
-  top: 240px;
+  top: -327px;
 }
 
 .pawn-conversion-piece{
