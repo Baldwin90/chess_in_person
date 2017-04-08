@@ -64,7 +64,7 @@ Board.prototype.isInCheckMate = function(checkingColor){
 
 To castle, in addition to the usual constraint that the king not be in check post-move, it must also be the case that the king is not currently in check, that the spaces between the castle and the king are not potential moves of the opposing player, and that the king and castle have not yet moved.
 
-``javascript
+```javascript
 Board.prototype.kingSideCastle = function(king){
   let kingRow = king.pos.row
 
@@ -94,7 +94,7 @@ Board.prototype.kingSideCastle = function(king){
   this.movePiece(king, knightSquare.pos);
   return this.actualMove(rook.pos, bishopSquare.pos);
 }
-``
+```
 
 ### En Passant
 
