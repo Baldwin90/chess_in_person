@@ -263,11 +263,11 @@ Board.prototype.isInCheckMate = function(checkingColor){
   }
 
   const moves = this.movesByColor(checkedColor);
-  const hasAValidMove = !moves.some((move) =>{
+  const hasNoValidMove = !moves.some((move) =>{
     return !this.wouldBeInCheckAfterMove(move.startCoords, move.endCoords)
   })
 
-  return hasAValidMove;
+  return hasNoValidMove;
 };
 
 Board.prototype.movePiece = function(movingPiece, endCoords){
