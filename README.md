@@ -5,7 +5,7 @@ Chess In Person is a front end web application facilitating two friends to play 
 
 ## Implementation
 
-Each type of `Piece` keeps track of its position on the `Board`, whose state is represented by an 8 row by 8 column matrix.  A piece can generate it's potential moves at any given moment and likewise a color can determine all it's potential moves by summing up all the potential moves of it's pieces.
+Each type of `Piece` keeps track of its position on the `Board`, whose state is represented by an 8 row by 8 column matrix.  A piece can generate its potential moves at any given moment and likewise a color can determine all its potential moves by summing up all the potential moves of its pieces.
 
 Excluding Enpassant and Castling, when a move is attempted the board first checks that the move is valid before actually committing the move:
 
@@ -15,7 +15,7 @@ Excluding Enpassant and Castling, when a move is attempted the board first check
   }
 ```
 
-A move is valid if it is indeed one of the pieces potential moves at that moment, and if the move would not leave the player in check.  To determine if the move would leave the player in check, the board executes the move and calls `isInCheck` (a function also used to determine checkmate) before finally restoring the board to it's previous state.  
+A move is valid if it is indeed one of the pieces potential moves at that moment, and if the move would not leave the player in check.  To determine if the move would leave the player in check, the board executes the move and calls `isInCheck` (a function also used to determine checkmate) before finally restoring the board to its previous state.  
 
 ```javascript
 Board.prototype.isValidMove = function(movingPiece, endCoords){
