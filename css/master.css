@@ -53,8 +53,10 @@
 }
 
 .main{
-  width: 100%;
+  width: 890px;
   height: 100%;
+  margin: auto;
+  position: relative;
 }
 
 .selected{
@@ -191,12 +193,12 @@ body{
 
 .just-moved-clock{
   position: absolute;
-  top: 18px;
-  left: 226px;
+  top: 10px;
+  left: 10px;
 }
 
 .to-move-clock{
   position: absolute;
-  top: 542px;
-  right: 226px;
+  top: 533px;
+  right: 10px;
 }
