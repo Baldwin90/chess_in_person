@@ -15,7 +15,7 @@ Excluding Enpassant and Castling, when a move is attempted the board first check
   }
 ```
 
-A move is valid if it is indeed one of the pieces potential moves at that moment, and if the move would not leave the player in check.  To determine if the move would leave the player in check, the board executes the move and calls `isInCheck` (a function also used to determine checkmate) before finally restoring the board to its previous state.  
+A move is valid if it is indeed one of the pieces potential moves at that moment, and if the move would not leave the player in check.  To determine if the move would leave the player in check, the board executes the move in question and calls `isInCheck` (a function also used to determine checkmate) before finally restoring the board to its previous state.  
 
 ```javascript
 Board.prototype.isValidMove = function(movingPiece, endCoords){
