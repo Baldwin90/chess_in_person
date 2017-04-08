@@ -5,7 +5,7 @@ Chess In Person is a front end web application facilitating two friends to play 
 
 ## Implementation
 
-Each type of `Piece` keeps track of it's position on the `Board`, whose state is represented by an 8 row by 8 column matrix.  A piece can generate it's potential moves at any given moment and likewise a color can determine all it's potential moves by summing up all the potential moves of it's pieces.
+Each type of `Piece` keeps track of its position on the `Board`, whose state is represented by an 8 row by 8 column matrix.  A piece can generate it's potential moves at any given moment and likewise a color can determine all it's potential moves by summing up all the potential moves of it's pieces.
 
 Excluding Enpassant and Castling, when a move is attempted the board first checks that the move is valid before actually committing the move:
 
